@@ -1,0 +1,6 @@
+<app-formulario-persona />
+<app-persona
+  *ngFor="let personaElemento of personas; let indiceElemento = index"
+  [persona]="personaElemento"
+  [indice]="indiceElemento"
+/>

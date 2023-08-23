@@ -1,0 +1,38 @@
+<form class="border p-5">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-3xl mt-3">
+    <!-- Campo Nombre -->
+    <div class="grid grid-cols-2">
+      <label for="nombre" class="block text-gray-70">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        class="border rounded px-2 py-1"
+        placeholder="Ingresa aca tu nombre"
+        #nombreInput
+      />
+    </div>
+
+    <!-- Campo Apellido -->
+    <div class="grid grid-cols-2">
+      <label for="apellido" class="block text-gray-700">Apellido</label>
+      <input
+        type="text"
+        id="apellido"
+        name="apellido"
+        class="border rounded px-2 py-1"
+        placeholder="Ingresa aca tu apellido"
+        #apellidoInput
+      />
+    </div>
+  </div>
+  <div class="text-center mt-4">
+    <button
+      type="submit"
+      class="uppercase bg-indigo-400 px-4 py-2 rounded"
+      (click)="addUser()"
+    >
+      Agregar persona
+    </button>
+  </div>
+</form>
