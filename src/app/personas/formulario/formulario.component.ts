@@ -13,7 +13,11 @@ export class FormularioPersonaComponent {
   @ViewChild("nombreInput") nombre: ElementRef
   @ViewChild("apellidoInput") apellido: ElementRef
 
-  constructor(private loginService: LoginService, private personService: PersonasService) { }
+  constructor(private loginService: LoginService, private personService: PersonasService) {
+    personService.saludar.subscribe((indice: number) => {
+      alert(`El incide es: ${indice}`)
+    })
+  }
 
   addUser() {
     const newUser = new Persona(this.nombre.nativeElement.value, this.apellido.nativeElement.value);

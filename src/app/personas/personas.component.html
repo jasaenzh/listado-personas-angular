@@ -1,6 +1,11 @@
-<app-formulario-persona />
-<app-persona
-  *ngFor="let personaElemento of personas; let indiceElemento = index"
-  [persona]="personaElemento"
-  [indice]="indiceElemento"
-/>
+<div class="bg-slate-200 my-5 rounded-md">
+  <app-persona
+    *ngFor="let personaElemento of personas; let indiceElemento = index"
+    [persona]="personaElemento"
+    [indice]="indiceElemento"
+  />
+</div>
+
+<div class="border rounded-md">
+  <app-formulario-persona class="" />
+</div>

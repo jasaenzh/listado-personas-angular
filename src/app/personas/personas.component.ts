@@ -16,4 +16,5 @@ export class PersonasComponent implements OnInit {
     this.personas = this.personaService.personas
   }
 
+
 }
